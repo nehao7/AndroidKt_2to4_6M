@@ -17,6 +17,9 @@
         <activity
             android:name=".WebViewActivity"
             android:exported="false" />
+
+        <activity android:name=".Realtimedatabase.firebase.MainActivitynew"
+            android:exported="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

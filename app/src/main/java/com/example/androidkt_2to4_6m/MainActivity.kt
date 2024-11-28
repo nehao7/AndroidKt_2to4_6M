@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.androidkt_2to4_6m.Realtimedatabase.firebase.MainActivitynew
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +22,9 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.web_view).setOnClickListener {
             startActivity(Intent(this , WebViewActivity::class.java))
+        }
+        findViewById<Button>(R.id.btnRealtime).setOnClickListener {
+            startActivity(Intent(this , MainActivitynew::class.java))
         }
     }
 }
