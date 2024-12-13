@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -15,11 +17,14 @@
         android:theme="@style/Theme.AndroidKt_2to4_6M"
         tools:targetApi="31">
         <activity
+            android:name=".LocationActivity"
+            android:exported="false" />
+        <activity
             android:name=".WebViewActivity"
             android:exported="false" />
-
-        <activity android:name=".Realtimedatabase.firebase.MainActivitynew"
-            android:exported="true"/>
+        <activity
+            android:name=".Realtimedatabase.firebase.MainActivitynew"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
